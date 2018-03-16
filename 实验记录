@@ -1,5 +1,7 @@
-001fu 219
+001fu 219  Al2O3与CePO4间距非常近，真空层最长，初始poscar已变
 gonghanfu 218
 001001fu 202
-001 153
-001001fufufu 222 在001001fu基础上发现POSCAR中Al写成了AL，尚不知有何影响，已修改重新提交，使用四个节点，不知是否对NCORE产生影响
+001001fufufu 223 在001001fu基础上发现POSCAR中Al写成了AL，尚不知有何影响，已修改重新提交，使用四个节点，不知是否对NCORE产生影响
+
+计算功函（work-function）方法：把LOCPOT与vtotav.py放于同一目录下，改名为LOCPOTfile，在cmd中运行python.exe vtotav.py LOCPOTfile z
+
