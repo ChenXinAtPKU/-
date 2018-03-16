@@ -1,8 +1,8 @@
 001fu 219  Al2O3与CePO4间距非常近，真空层最长，初始poscar已变。判断收敛与否
-gonghanfu 218  原子已经飞出去了， d E =-.177103E+04，如果接下来仍是这样则删除任务。已删
 001001fufu 202  尽管真空层不够，但是先算着
 001001fufufu 223 在001001fu基础上发现POSCAR中Al写成了AL，尚不知有何影响，已修改重新提交，使用四个节点，不知是否对NCORE产生影响,真空层约为30
 3.16草稿excel可以调节真空层
-
 计算功函（work-function）方法：把LOCPOT与vtotav.py放于同一目录下，改名为LOCPOTfile，在cmd中运行python.exe vtotav.py LOCPOTfile z
+
+！！！！！发现晶格匹配的问题！！！！！
 
