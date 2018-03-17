@@ -4,5 +4,14 @@
 3.16草稿excel可以调节真空层
 计算功函（work-function）方法：把LOCPOT与vtotav.py放于同一目录下，改名为LOCPOTfile，在cmd中运行python.exe vtotav.py LOCPOTfile z
 
-！！！！！发现晶格匹配的问题！！！！！
+！！！！！发现晶格匹配的问题！！！！！：假装我们放的不是氧化铝晶体，只是单纯的一层铝原子和两层氧原子。
+001001fufufufu： 在001001fufufu的基础上，删去一层氧原子。   ！？：如何解释不见的那部分氧原子？
 
+
+现有计算结果：
+001001fu：氧化铝和CePO4的111面slab。NSW=1，真空层=24，KPOINT=771, TOTEN= 1368.713271
+optimin1：CePO4单胞。NSW=200，TOTEN=-194.22290259 eV
+al2o3test：alpha-Al2O3单胞。TOTEN=-224.42828195 eV
+CePO4001:TOTEN=-590.64526504 eV  没收敛
+CePO4010:TOTEN=-586.92024391 eV  没收敛
+CePO4100:TOTEN=-628.76663201 eV  没收敛
