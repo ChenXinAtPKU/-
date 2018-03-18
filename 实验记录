@@ -1,6 +1,10 @@
 001fu 219  Al2O3与CePO4间距非常近，真空层最长，初始poscar已变。判断收敛与否。不收敛，停止运算。
-001001fufu 202  尽管真空层不够，但是先算着
+001001fufu 202  计算结束。真空层不够，不收敛
 001001fufufu  真空层约为30,KPOINTS改为551
+17ni FUFUFUFU 计算结束，中间少两层氧，散了
+17ni zhongji ：45247 ，提交，如失败则改NCORE
+001001fufufufu 45233 计算结束，中间少两层氧
+CePO4001Al： 未提交，提交失败
 3.16草稿excel可以调节真空层
 计算功函（work-function）方法：把LOCPOT与vtotav.py放于同一目录下，改名为LOCPOTfile，在cmd中运行python.exe vtotav.py LOCPOTfile z
 
@@ -9,9 +13,11 @@
 
 
 现有计算结果：
-001001fu：氧化铝和CePO4的111面slab。NSW=1，真空层=24，KPOINT=771, TOTEN= 1368.713271
 optimin1：CePO4单胞。NSW=200，TOTEN=-194.22290259 eV
 al2o3test：alpha-Al2O3单胞。TOTEN=-224.42828195 eV
 CePO4001:TOTEN=-590.64526504 eV  没收敛
 CePO4010:TOTEN=-586.92024391 eV  没收敛
 CePO4100:TOTEN=-628.76663201 eV  没收敛
+001001fu：氧化铝和CePO4的111面slab。NSW=1，真空层=24，KPOINT=771, TOTEN= 1368.713271。只算了一步
+001001fufu：真空层不够，原子散了，TOTEN=-774.50237337 eV
+17ni/001001fufufufu：中间少两层氧，原子散了，TOTEN=-684.96220916
