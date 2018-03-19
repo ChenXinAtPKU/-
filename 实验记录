@@ -21,3 +21,11 @@ CePO4100:TOTEN=-628.76663201 eV  没收敛
 001001fu：氧化铝和CePO4的111面slab。NSW=1，真空层=24，KPOINT=771, TOTEN= 1368.713271。只算了一步
 001001fufu：真空层不够，原子散了，TOTEN=-774.50237337 eV
 17ni/001001fufufufu：中间少两层氧，原子散了，TOTEN=-684.96220916
+
+3.19:
+   17ni/001001fufufufu：中间少两层氧，原子散了，TOTEN=-684.96220916  利用CONTAR重新计算
+   17ni/001001fufufufufu:承接001001fufufufu计算下去。
+   CePO4001:TOTEN=-590.64526504 eV  没收敛 利用CONTAR重新计算
+   17ni zhongji ：45247 继续算，算完之后算一下功函数
+   
+   
