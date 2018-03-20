@@ -29,4 +29,4 @@ CePO4100:TOTEN=-628.76663201 eV  没收敛
    17ni zhongji ：45247 继续算，算完之后算一下功函。INCAR的错误：1：LVHAR=.TRUE.。2：LDIPOL=.TRUE.IDIPOL=3。3：SIGMA=0.01。
    算功函 45349. /udata/cczhang/chenx/17ni/workfunction
   
-  ！！！！如果不收敛：可以尝试修改IBRION，SIGMA
+  ！！！！如果不收敛：可以尝试修改IBRION=3，SIGMA, POTIM=0.1，NELM =200
