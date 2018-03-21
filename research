@@ -27,6 +27,7 @@ CePO4100:TOTEN=-628.76663201 eV  没收敛
    17ni/001001fufufufufu:承接001001fufufufu计算下去。sigma改为0.01   /udata/cczhang/chenx/17ni/001001fufufufufu  45351
    CePO4001:TOTEN=-590.64526504 eV  没收敛 利用CONTAR重新计算，sigma调大   /udata/cczhang/chenx/17ni/CePO4001  45356
    17ni zhongji ：45247 继续算，算完之后算一下功函。INCAR的错误：1：LVHAR=.TRUE.。2：LDIPOL=.TRUE.IDIPOL=3。3：SIGMA=0.01。
+   /udata/cczhang/chenx/17ni/001001zhongji   把上述任务重新提交，并修改了错误。45633
    算功函 45349. /udata/cczhang/chenx/17ni/workfunction
    只放一个氧原子，LDIPOL=.TRUE.IDIPOL=3，/udata/cczhang/chenx/CePO4001Al1  45421
   
