@@ -30,5 +30,5 @@ CePO4100:TOTEN=-628.76663201 eV  没收敛
    /udata/cczhang/chenx/17ni/001001zhongji   把上述任务重新提交，并修改了错误。45633
    算功函 45349. /udata/cczhang/chenx/17ni/workfunction
    只放一个氧原子，LDIPOL=.TRUE.IDIPOL=3，/udata/cczhang/chenx/CePO4001Al1  45421
-  
+  45654 采用彭智学长的方法：让所有的原子都可以运动 /udata/cczhang/chenx/CePO4newP
   ！！！！如果不收敛：可以尝试修改IBRION=3，SIGMA, POTIM=0.1，NELM =200
