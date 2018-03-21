@@ -10,5 +10,7 @@
      :氧原子往外飞：1尝试减小POTIM 。 2把初始位置再拉近一点
       如果还不收敛，可以尝试把IBRION设置为3。https://cms.mpi.univie.ac.at/wiki/index.php/IBRION
       或者LDIPOL=.TRUE.,IDIPOL=3   https://cms.mpi.univie.ac.at/wiki/index.php/DIPOL
+      修改ISMEAR为-5，：http://cms.mpi.univie.ac.at/vasp/guide/node124.html
   ！！！！如果不收敛：可以尝试修改IBRION=3，SIGMA, POTIM=0.1，NELM =200
+  
   
