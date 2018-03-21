@@ -1,40 +1,12 @@
-001fu 219  Al2O3与CePO4间距非常近，真空层最长，初始poscar已变。判断收敛与否。不收敛，停止运算。
-001001fufu 202  计算结束。真空层不够，不收敛
-001001fufufu  真空层约为30,KPOINTS改为551
-17ni FUFUFUFU 计算结束，中间少两层氧，散了
-17ni zhongji ：45247 ，提交，如失败则改NCORE
-001001fufufufu 45233 计算结束，中间少两层氧
-CePO4001Al： 未提交，提交失败
-3.16草稿excel可以调节真空层
-计算功函（work-function）方法：把LOCPOT与vtotav.py放于同一目录下，改名为LOCPOTfile，在cmd中运行python.exe vtotav.py LOCPOTfile z
 
-！！！！！发现晶格匹配的问题！！！！！：假装我们放的不是氧化铝晶体，只是单纯的一层铝原子和两层氧原子。
-001001fufufufu：45233 在001001fufufu的基础上，删去一层氧原子。   ！？：如何解释不见的那部分氧原子？
-
-
-现有计算结果：
-optimin1：CePO4单胞。NSW=200，TOTEN=-194.22290259 eV
-al2o3test：alpha-Al2O3单胞。TOTEN=-224.42828195 eV
-CePO4001:TOTEN=-590.64526504 eV  没收敛
-CePO4010:TOTEN=-586.92024391 eV  没收敛
-CePO4100:TOTEN=-628.76663201 eV  没收敛
-001001fu：氧化铝和CePO4的111面slab。NSW=1，真空层=24，KPOINT=771, TOTEN= 1368.713271。只算了一步
-001001fufu：真空层不够，原子散了，TOTEN=-774.50237337 eV
-17ni/001001fufufufu：中间少两层氧，原子散了，TOTEN=-684.96220916
-
-3.19:
-   17ni/001001fufufufu：中间少两层氧，原子散了，TOTEN=-684.96220916  利用CONTAR重新计算
-   17ni/001001fufufufufu:承接001001fufufufu计算下去。sigma改为0.01   /udata/cczhang/chenx/17ni/001001fufufufufu  45351 已停止，原子偏离严重
-   CePO4001:TOTEN=-590.64526504 eV  没收敛 利用CONTAR重新计算，sigma调大   /udata/cczhang/chenx/17ni/CePO4001  45356 停止
-   17ni zhongji ：45247 继续算，算完之后算一下功函。INCAR的错误：1：LVHAR=.TRUE.。2：LDIPOL=.TRUE.IDIPOL=3。3：SIGMA=0.01。
-   /udata/cczhang/chenx/17ni/001001zhongji   把上述任务重新提交，并修改了错误。45633   已停止
-   算功函 45349. /udata/cczhang/chenx/17ni/workfunction
-   只放一个氧原子，LDIPOL=.TRUE.IDIPOL=3，/udata/cczhang/chenx/CePO4001Al1  45421
-  采用彭智学长的方法 两层氧一层铝：让所有的原子都可以运动  但是太慢了，加上了翁某的方法。废了，原子彻底散乱 /udata/cczhang/chenx/CePO4newP  
-  45655. 采用彭智学长的方法 一层氧一层铝   /udata/cczhang/chenx/001001fufufufufuP  45655 已经停止
+  3.21~NOW
+  45421 只放一个氧原子，LDIPOL=.TRUE.IDIPOL=3，/udata/cczhang/chenx/CePO4001Al1  45421
+  GG     采用彭智学长的方法 两层氧一层铝：让所有的原子都可以运动  但是太慢了，加上了翁某的方法。废了，原子彻底散乱 /udata/cczhang/chenx/CePO4newP  
+  GG   . 采用彭智学长的方法 一层氧一层铝   /udata/cczhang/chenx/001001fufufufufuP  45655 已经停止
   45668  采用翁学长方法 一层氧一层铝   /udata/cczhang/chenx/newk
   45688 采用翁学长办法 算CePO4表面 /udata/cczhang/chenx/CePO4001W/111 45688
   45670 /udata/cczhang/chenx/newkmoreclose 氧化铝和磷酸铈挨着更近
+  45700  /udata/cczhang/chenx/CePO4001O1   采用翁学长方法 只放一个氧原子
      :氧原子往外飞：1尝试减小POTIM 。 2把初始位置再拉近一点
       如果还不收敛，可以尝试把IBRION设置为3。https://cms.mpi.univie.ac.at/wiki/index.php/IBRION
       或者LDIPOL=.TRUE.,IDIPOL=3   https://cms.mpi.univie.ac.at/wiki/index.php/DIPOL
