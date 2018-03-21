@@ -24,11 +24,19 @@ CePO4100:TOTEN=-628.76663201 eV  没收敛
 
 3.19:
    17ni/001001fufufufu：中间少两层氧，原子散了，TOTEN=-684.96220916  利用CONTAR重新计算
-   17ni/001001fufufufufu:承接001001fufufufu计算下去。sigma改为0.01   /udata/cczhang/chenx/17ni/001001fufufufufu  45351
-   CePO4001:TOTEN=-590.64526504 eV  没收敛 利用CONTAR重新计算，sigma调大   /udata/cczhang/chenx/17ni/CePO4001  45356
+   17ni/001001fufufufufu:承接001001fufufufu计算下去。sigma改为0.01   /udata/cczhang/chenx/17ni/001001fufufufufu  45351 已停止，原子偏离严重
+   CePO4001:TOTEN=-590.64526504 eV  没收敛 利用CONTAR重新计算，sigma调大   /udata/cczhang/chenx/17ni/CePO4001  45356 停止
    17ni zhongji ：45247 继续算，算完之后算一下功函。INCAR的错误：1：LVHAR=.TRUE.。2：LDIPOL=.TRUE.IDIPOL=3。3：SIGMA=0.01。
-   /udata/cczhang/chenx/17ni/001001zhongji   把上述任务重新提交，并修改了错误。45633
+   /udata/cczhang/chenx/17ni/001001zhongji   把上述任务重新提交，并修改了错误。45633   已停止
    算功函 45349. /udata/cczhang/chenx/17ni/workfunction
    只放一个氧原子，LDIPOL=.TRUE.IDIPOL=3，/udata/cczhang/chenx/CePO4001Al1  45421
-  45654 采用彭智学长的方法：让所有的原子都可以运动 /udata/cczhang/chenx/CePO4newP
+  采用彭智学长的方法 两层氧一层铝：让所有的原子都可以运动  但是太慢了，加上了翁某的方法。废了，原子彻底散乱 /udata/cczhang/chenx/CePO4newP  
+  45655. 采用彭智学长的方法 一层氧一层铝   /udata/cczhang/chenx/001001fufufufufuP  45655 已经停止
+  45668  采用翁学长方法 一层氧一层铝   /udata/cczhang/chenx/newk
+  45688 采用翁学长办法 算CePO4表面 /udata/cczhang/chenx/CePO4001W/111 45688
+  45670 /udata/cczhang/chenx/newkmoreclose 氧化铝和磷酸铈挨着更近
+     :氧原子往外飞：1尝试减小POTIM 。 2把初始位置再拉近一点
+      如果还不收敛，可以尝试把IBRION设置为3。https://cms.mpi.univie.ac.at/wiki/index.php/IBRION
+      或者LDIPOL=.TRUE.,IDIPOL=3   https://cms.mpi.univie.ac.at/wiki/index.php/DIPOL
   ！！！！如果不收敛：可以尝试修改IBRION=3，SIGMA, POTIM=0.1，NELM =200
+  
