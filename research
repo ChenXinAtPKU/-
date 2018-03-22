@@ -4,15 +4,20 @@
   
   GG     采用彭智学长的方法 两层氧一层铝：让所有的原子都可以运动  但是太慢了，加上了翁某的方法。废了，原子彻底散乱 /udata/cczhang/chenx/CePO4newP  
   GG   . 采用彭智学长的方法 一层氧一层铝   /udata/cczhang/chenx/001001fufufufufuP  45655 已经停止
-  45668  采用翁学长方法 一层氧一层铝   /udata/cczhang/chenx/newk
-  45764 采用翁学长办法 算CePO4表面 /udata/cczhang/chenx/CePO4001W/111 45764
+  ！！等待重新提交 45837  采用翁学长方法 一层氧一层铝   /udata/cczhang/chenx/newk/111
+         BIRION改为3，kpoints改为331，继续算  /udata/cczhang/chenx/newk/331
+  45782 采用翁学长办法 算CePO4表面 /udata/cczhang/chenx/CePO4001W/111 45782
        表面不收敛，是否是真空层不够的原因
+       或者继续保持ISIF=2，但是不固定原子
        接着CONTAR继续计算： IBRIOB改为3 ：/udata/cczhang/chenx/CePO4001W/111GO
-  45759 /udata/cczhang/chenx/newkmoreclose 氧化铝和磷酸铈挨着更近   45759
-        接着CONTAR继续算，把所有原子设置为可移动
-  45760  /udata/cczhang/chenx/CePO4001O1   采用翁学长方法 只放一个氧原子  45760
-     莫名自己停掉，重新计算
-  45763 /udata/cczhang/chenx/CePO4001Al1 只放一个Al原子 45763
+  45867 /udata/cczhang/chenx/newkmoreclose/111GOe 氧化铝和磷酸铈挨着更近   45867
+        接着CONTAR继续算，调小EDIFF
+！！！等待重新提交 完全没有收敛的趋势，建议改参数 /udata/cczhang/chenx/CePO4001O1   采用翁学长方法 只放一个氧原子  ！！！
+     循环出错，IBRION从3改为2，ALGO改为fast
+  45836 /udata/cczhang/chenx/CePO4001Al1 只放一个Al原子 45836
+  PERFECT：
+        45868 workfunction
+        45869： 111：/udata/cczhang/chenx/PERFECT/111
 ！！！！:氧原子往外飞：1尝试减小POTIM 。 2把初始位置再拉近一点   ！！！！！！！！！！！！！！！！！！
       如果还不收敛，可以尝试把IBRION设置为3。https://cms.mpi.univie.ac.at/wiki/index.php/IBRION
       或者LDIPOL=.TRUE.,IDIPOL=3   https://cms.mpi.univie.ac.at/wiki/index.php/DIPOL
