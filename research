@@ -7,7 +7,7 @@
   ！！等待重新提交 45837  采用翁学长方法 一层氧一层铝   /udata/cczhang/chenx/newk/111
          BIRION改为3，kpoints改为331，继续算  /udata/cczhang/chenx/newk/331
   46030 采用翁学长办法 算CePO4表面,EDIFf改为8 /udata/cczhang/chenx/CePO4001W/111/111go 45969
-  46040 /udata/cczhang/chenx/CePO4001W/111GO
+  46040 改变了真空层，和ISMEAR   /udata/cczhang/chenx/CePO4001W/111GO
        表面不收敛，是否是真空层不够的原因！！！已提交workfunction，不是
        或者继续保持ISIF=2，
        接着CONTAR继续计算： IBRIOB改为3 ：
