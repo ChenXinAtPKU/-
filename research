@@ -14,7 +14,7 @@
 
 46005 等待重新提交 完全没有收敛的趋势，建议改参数 /udata/cczhang/chenx/CePO4001O1   采用翁学长方法 只放一个氧原子  ！！！
      循环出错，IBRION从3改为2，ALGO改为fast
- 46001 /udata/cczhang/chenx/CePO4001Al1/gon 只放一个Al原子    46001
+ 46007 /udata/cczhang/chenx/CePO4001Al1/gon 只放一个Al原子    46001
   PERFECT：
         45957： 111：/udata/cczhang/chenx/PERFECT/111   ->>>   /udata/cczhang/chenx/PERFECT/111go111
               如果出错就删掉LDIPOL=.TRUE.,IDIPOL=3
