@@ -2,7 +2,7 @@
   3.21~NOW
  GG 只放一个氧原子，LDIPOL=.TRUE.IDIPOL=3，/udata/cczhang/chenx/CePO4001Al1    已经停止，算的不收敛  GG
   
-  46002      /udata/cczhang/chenx/CePO4newP  
+  46004      /udata/cczhang/chenx/CePO4newP  
   GG   . 采用彭智学长的方法 一层氧一层铝   /udata/cczhang/chenx/001001fufufufufuP  45655 已经停止
   ！！等待重新提交 45837  采用翁学长方法 一层氧一层铝   /udata/cczhang/chenx/newk/111
          BIRION改为3，kpoints改为331，继续算  /udata/cczhang/chenx/newk/331
@@ -12,7 +12,7 @@
        接着CONTAR继续计算： IBRIOB改为3 ：
        把POTIM改为0.05
 
-46000 等待重新提交 完全没有收敛的趋势，建议改参数 /udata/cczhang/chenx/CePO4001O1   采用翁学长方法 只放一个氧原子  ！！！
+46005 等待重新提交 完全没有收敛的趋势，建议改参数 /udata/cczhang/chenx/CePO4001O1   采用翁学长方法 只放一个氧原子  ！！！
      循环出错，IBRION从3改为2，ALGO改为fast
  46001 /udata/cczhang/chenx/CePO4001Al1/gon 只放一个Al原子    46001
   PERFECT：
